@@ -6,6 +6,9 @@ set incsearch hlsearch
 set autoindent
 set number
 set wildmenu
+set ttymouse=xterm2
+set mouse=a
+
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
 "easy buffer access                                                                    
@@ -39,4 +42,18 @@ nnoremap <F6> :tabclose<CR>
 
 set laststatus=2
 set statusline=%{GitBranch()}
+
+
+
+
+:map <M-Esc>[62~ <ScrollWheelUp>
+:map! <M-Esc>[62~ <ScrollWheelUp>
+:map <M-Esc>[63~ <ScrollWheelDown>
+:map! <M-Esc>[63~ <ScrollWheelDown>
+:map <M-Esc>[64~ <S-ScrollWheelUp>
+:map! <M-Esc>[64~ <S-ScrollWheelUp>
+:map <M-Esc>[65~ <S-ScrollWheelDown>
+:map! <M-Esc>[65~ <S-ScrollWheelDown>
+
+
 
