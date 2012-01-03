@@ -6,7 +6,6 @@ set incsearch hlsearch
 set autoindent
 set number
 set wildmenu
-                                                                                       
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
 "easy buffer access                                                                    
@@ -33,8 +32,8 @@ map! <F3> <ESC> :ConqueTermTab bash <CR>
 map! <F4> <ESC>:tabp<CR>i
 map! <F5> <ESC>:tabn<CR>i
 map! <F6> <ESC>:tabclose<CR>
-nnoremap <F4> :tabp<CR>
-nnoremap <F5> :tabn<CR>
+nnoremap <F4> :tabp<CR>i
+nnoremap <F5> :tabn<CR>i
 nnoremap <F6> :tabclose<CR>
 
 
