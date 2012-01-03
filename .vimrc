@@ -13,8 +13,11 @@ set wildmenu
 "set wildcharm=<C-Z>                                                                    
 "nnoremap <F4> :buffer <C-Z>
 
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
+nnoremap <F2> :set number! invpaste paste?<CR>i
+"set pastetoggle=<F2>
+map! <F2> <ESC>: set nonumber invpaste paste?<CR>i
+
+
 set showmode
 
 nnoremap <F3> :ConqueTermTab bash <CR>
