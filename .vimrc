@@ -36,3 +36,8 @@ map! <F6> <ESC>:tabclose<CR>
 nnoremap <F4> :tabp<CR>
 nnoremap <F5> :tabn<CR>
 nnoremap <F6> :tabclose<CR>
+
+
+set laststatus=2
+set statusline=%{GitBranch()}
+
