@@ -9,6 +9,7 @@ set wildmenu
 "set wildmode=longest:full
 set ttymouse=xterm2
 set mouse=a
+set wrap!
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
