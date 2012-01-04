@@ -1,5 +1,12 @@
 syntax on
 colorscheme desert256
+highlight Pmenu ctermbg=darkred                                         
+highlight Search ctermbg=23                                             
+set cursorline                                                          
+highlight CursorLine ctermbg=233 cterm=none                             
+highlight LineNr ctermbg=233
+highlight Normal ctermbg=232
+highlight CursorLine ctermbg=233
 set scrolloff=5
 set tabstop=4 shiftwidth=4
 set incsearch hlsearch
@@ -11,6 +18,9 @@ set ttymouse=xterm2
 set mouse=a
 "set t_RV=
 set wrap!
+set hidden                                                              
+set ruler                                                               
+set showcmd
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
@@ -26,7 +36,7 @@ map! <F2> <ESC>: set nonumber invpaste paste?<CR>i
 set showmode
 
 nnoremap <F3> :ConqueTermTab bash <CR>
-"nnoremap <F5> :b#<CR>
+"nnoremap <F5> :b#<C
 "map! <F5> <ESC>:b#<CR>
 map! <F3> <ESC> :ConqueTermTab bash <CR>
 "map! <F4> <ESC> :buffer <C-Z>
@@ -44,8 +54,9 @@ nnoremap <F6> :tabclose<CR>
 
 
 set laststatus=2
-set statusline=%{GitBranch()}
+"set statusline=%{GitBranch()}
 "set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
+set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
 
 
 set mouse=a
