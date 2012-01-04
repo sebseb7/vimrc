@@ -240,9 +240,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     endfun
     " }}}
 
-    call <SID>X("Normal", "cccccc", "000000", "")
+    call <SID>X("Normal", "cccccc", "00005f", "")
+    call <SID>X("CursorLine", "", "000087", "none")
+    call <SID>X("Pmenu", "", "0000af", "")
+    call <SID>X("LineNr", "afff00", "0000af", "")
 
-    " highlight groups
+" highlight groups
+
     call <SID>X("Cursor", "708090", "f0e68c", "")
     "CursorIM
     "Directory
@@ -262,7 +266,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("Question", "00ff7f", "", "")
     call <SID>X("Search", "f5deb3", "cd853f", "")
     call <SID>X("SpecialKey", "9acd32", "", "")
-    call <SID>X("StatusLine", "c2bfa5", "000000", "reverse")
+    call <SID>X("StatusLine", "00afff", "000000", "reverse")
     call <SID>X("StatusLineNC", "c2bfa5", "7f7f7f", "reverse")
     call <SID>X("Title", "cd5c5c", "", "")
     call <SID>X("Visual", "6b8e23", "f0e68c", "reverse")
@@ -272,7 +276,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     "Menu
     "Scrollbar
     "Tooltip
-
     " syntax highlighting groups
     call <SID>X("Comment", "87ceeb", "", "")
     call <SID>X("Constant", "ffa0a0", "", "")
