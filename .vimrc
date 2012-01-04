@@ -1,14 +1,6 @@
 syntax on
 colorscheme desert256
-"highlight Pmenu ctermbg=darkred                                         
-"highlight Search ctermbg=23                                             
 set cursorline                                                          
-"hi CursorLine cterm=none
-"highlight CursorLine ctermbg=233 cterm=none                             
-"highlight LineNr ctermbg=233
-"highlight Normal ctermfg=251 ctermbg=16 guifg=#cccccc guibg=#000000
-"highlight Normal ctermbg=232
-"highlight CursorLine ctermbg=233
 set scrolloff=5
 set tabstop=4 shiftwidth=4
 set incsearch hlsearch

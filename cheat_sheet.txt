@@ -64,6 +64,7 @@
 
 		c			replace marked text
 		cw			replace rest of word
+		ciw			replace current word
 		r			replace character
 		R			enter replace mode 
 	
@@ -157,4 +158,23 @@
 		:.= 		show current line number
 		:=			count number of lines
 	    C-g			show file info
+
+-----------------------
+| Tabs & Split screen |
+-----------------------
+
+	* splitscreen
+			
+		:split 		splits the screen
+		:vsplit
+		C-w C-w		cycle screens
+		C-w +,-,<,> resize screen
+		C-w up,down,left,right
+					navigate screens
+			
+	* tabs
+
+		:tabnew		create new tab
+		<num>gt		goto tab <num>
+		gt,gT		next, previous tab
 
