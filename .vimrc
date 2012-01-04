@@ -6,9 +6,11 @@ set incsearch hlsearch
 set autoindent
 set number
 set wildmenu
+"set wildmode=longest:full
 set ttymouse=xterm2
 set mouse=a
 "set t_RV=
+set wrap!
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
@@ -43,6 +45,7 @@ nnoremap <F6> :tabclose<CR>
 
 set laststatus=2
 set statusline=%{GitBranch()}
+"set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
 
 
 set mouse=a
@@ -58,4 +61,6 @@ set mouse=a
 ":map <M-Esc>[65~ <S-ScrollWheelDown>
 ":map! <M-Esc>[65~ <S-ScrollWheelDown>
 
+"open file at last position
+:au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
