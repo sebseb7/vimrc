@@ -6,6 +6,7 @@ set incsearch hlsearch
 set autoindent
 set number
 set wildmenu
+"set wildmode=longest:full
 set ttymouse=xterm2
 set mouse=a
 
@@ -42,6 +43,7 @@ nnoremap <F6> :tabclose<CR>
 
 set laststatus=2
 set statusline=%{GitBranch()}
+"set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
 
 
 
