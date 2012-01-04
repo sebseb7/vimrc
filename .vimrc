@@ -46,16 +46,17 @@ set statusline=%{GitBranch()}
 "set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
 
 
+set mouse=a
+"set ttytype=xterm
 
 
-:map <M-Esc>[62~ <ScrollWheelUp>
-:map! <M-Esc>[62~ <ScrollWheelUp>
-:map <M-Esc>[63~ <ScrollWheelDown>
-:map! <M-Esc>[63~ <ScrollWheelDown>
-:map <M-Esc>[64~ <S-ScrollWheelUp>
-:map! <M-Esc>[64~ <S-ScrollWheelUp>
-:map <M-Esc>[65~ <S-ScrollWheelDown>
-:map! <M-Esc>[65~ <S-ScrollWheelDown>
-
+":map <M-Esc>[62~ <ScrollWheelUp>
+":map! <M-Esc>[62~ <ScrollWheelUp>
+":map <M-Esc>[63~ <ScrollWheelDown>
+":map! <M-Esc>[63~ <ScrollWheelDown>
+":map <M-Esc>[64~ <S-ScrollWheelUp>
+":map! <M-Esc>[64~ <S-ScrollWheelUp>
+":map <M-Esc>[65~ <S-ScrollWheelDown>
+":map! <M-Esc>[65~ <S-ScrollWheelDown>
 
 
