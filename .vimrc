@@ -8,6 +8,7 @@ set number
 set wildmenu
 set ttymouse=xterm2
 set mouse=a
+"set t_RV=
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
