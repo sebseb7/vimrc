@@ -12,7 +12,9 @@
 		k,j,l,h 	up,down,right,left
 		0,$			start, end of line
 		^,g_		first, last non-whitespace character
-
+		+			next line start (non whitespace)
+		-			previous line start
+		<num>|		move to character (tabs expanded) <num> in current line
 
 	* by word
 
@@ -35,6 +37,8 @@
 		<num>gg		jum to line <num>
 		<num>G		same
 		:<num>		same
+		C-e			moves screen down by 1 
+		C-y			moves screen up by 1 
 
 	* special
 		
@@ -121,9 +125,21 @@
 			i		ignore case
 			c		confirm each substitution (y:yes,n:skip,a:yes to all,q:quit)
 
+--------------
+| Ending vim |
+--------------
+
+		ZZ,:wq,:x	save and exit	
+		:w			save
+		:w <file>	save as
+
+
 
 -----------
 | Special |
 -----------
 
+		:.= 		show current line number
+		:=			count number of lines
+	    C-g			show file info
 
