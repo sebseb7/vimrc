@@ -60,4 +60,6 @@ set mouse=a
 ":map <M-Esc>[65~ <S-ScrollWheelDown>
 ":map! <M-Esc>[65~ <S-ScrollWheelDown>
 
+"open file at last position
+:au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
