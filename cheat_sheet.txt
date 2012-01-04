@@ -39,7 +39,9 @@
 		:<num>		same
 		C-e			moves screen down by 1 
 		C-y			moves screen up by 1 
-
+		z<RET>		makes current line top of the screen
+		z.			makes current line middle of the screen
+		z-			makes current line bottom of the screen
 	* special
 		
 		%			jump back and forth between matching braces, or parenthesis
@@ -68,11 +70,14 @@
 	* copy/paste
 	
 		y			copy marked text to clipboard
-		d			cut marked text to clipboard
+		y<nav-cmd>	copy using navigation command
 		yy,Y		copy current line
 		dd			copy current line to clipboard 
+		d			cut marked text to clipboard
+		d<nav-cmd>	delete using navigation command
 		p 			paste
 		P			paste before
+		"<a-z>		switch between buffers a to z
 
 	* undo / redo
 
@@ -85,6 +90,7 @@
 		X			delete character before cursor
 		dd			delete current line
 		d<nav-cmd>	delete using navigation command
+		D			deletes rest of current line
 
 	* shift/indent
 		
@@ -99,6 +105,15 @@
 		~			toggle the case of character under cursor or marked block
 		g~<nav-cmd>	toggle the case using a navigation-command
 		C-a,C-x		increase, decrease number under cursor
+
+-----------
+| Markers |
+-----------
+
+		m<a-z>		set marker a to z
+		'<a-z>		goto first non-whitespace character of line with marker
+
+
 
 
 ----------
