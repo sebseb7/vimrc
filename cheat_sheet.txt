@@ -1,0 +1,129 @@
+=====================
+|| Vim Cheat Sheet ||
+=====================
+
+
+--------------
+| Navigation |
+--------------
+
+	* by Line
+
+		k,j,l,h 	up,down,right,left
+		0,$			start, end of line
+		^,g_		first, last non-whitespace character
+
+
+	* by word
+
+		e,E			end of current word 
+		b,B			beginning of word
+		w,W			beginning of next word
+		*,#			next, previous occurrence of the current word under the cursor
+
+		(lower case: word == A-Za-z ; upper case: word == all except whitespace)
+
+	* screen
+		
+		H,M,L		first,center, last line of the current screen
+		C-f			page-down
+		C-b			page-up
+		C-d			half page-down
+		C-u			halt page-up
+		G			start of document
+		gg			end of document
+		<num>gg		jum to line <num>
+		<num>G		same
+		:<num>		same
+
+	* special
+		
+		%			jump back and forth between matching braces, or parenthesis
+
+
+--------
+| Edit |
+--------
+
+	* insert
+		
+		i			insert before cursor
+		I			insert at the start of the current line
+		a			insert after cursor
+		A			insert atthe end of the current line
+		o			new line below
+		O			new line above
+
+	* change
+
+		c			replace marked text
+		cw			replace rest of word
+		r			replace character
+		R			enter replace mode 
+	
+	* copy/paste
+	
+		y			copy marked text to clipboard
+		d			cut marked text to clipboard
+		yy,Y		copy current line
+		dd			copy current line to clipboard 
+		p 			paste
+		P			paste before
+
+	* undo / redo
+
+		u			undo
+		U			undo last change in current line
+		C-r			redo
+
+	* delete
+		x			delete character under cursor
+		X			delete character before cursor
+		dd			delete current line
+		d<nav-cmd>	delete using navigation command
+
+	* shift/indent
+		
+		>			indent
+		<			de-indent
+		=			auto
+		=G			global indent	
+
+	* special
+
+		.			repeat last command
+		~			toggle the case of character under cursor or marked block
+		g~<nav-cmd>	toggle the case using a navigation-command
+		C-a,C-x		increase, decrease number under cursor
+
+
+----------
+| Search |
+----------
+
+	* search
+
+		/<pattern>	(n: next match, N: previous match)
+
+	* replace
+		
+		:<range>s/<pattern>/<replace>/<argument>
+
+		range:
+			
+			empty	current line only
+			number	only on line numbers
+			%		complete document
+
+		argument:
+
+			g		global
+			i		ignore case
+			c		confirm each substitution (y:yes,n:skip,a:yes to all,q:quit)
+
+
+-----------
+| Special |
+-----------
+
+
