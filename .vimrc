@@ -40,3 +40,6 @@ nnoremap <F6> :tabclose<CR>
 set laststatus=2
 set statusline=%{GitBranch()}
 
+
+set mouse=a
+set ttytype=xterm
