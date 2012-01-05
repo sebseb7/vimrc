@@ -191,3 +191,10 @@
 		zG			add to session word list
 		zW			mark as misspelled
 
+------------
+| Helpfull |
+------------
+
+		xp			exchange two characters
+		ddp			swap lines
+
