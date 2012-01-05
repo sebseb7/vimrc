@@ -56,7 +56,7 @@
 		i			insert before cursor
 		I			insert at the start of the current line
 		a			insert after cursor
-		A			insert atthe end of the current line
+		A			insert at the end of the current line
 		o			new line below
 		O			new line above
 
@@ -163,7 +163,7 @@
 | Tabs & Split screen |
 -----------------------
 
-	* splitscreen
+	* split screen
 			
 		:split 		splits the screen
 		:vsplit
