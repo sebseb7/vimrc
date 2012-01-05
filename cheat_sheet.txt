@@ -192,7 +192,7 @@
 		zW			mark as misspelled
 
 ------------
-| Helpfull |
+| Helpful |
 ------------
 
 		xp			exchange two characters
