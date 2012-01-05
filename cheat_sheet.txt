@@ -178,3 +178,14 @@
 		<num>gt		goto tab <num>
 		gt,gT		next, previous tab
 
+----------
+| Macros |
+----------
+
+		q<a-z>		start record macro
+		q			stop recording
+		@<a-z>		execute macro
+		@@			execute again
+		:reg <a-z>	show macro
+
+
