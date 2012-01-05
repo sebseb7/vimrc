@@ -201,3 +201,14 @@
 		zG			add to session word list
 		zW			mark as misspelled
 
+
+-------------------------
+| my custom keymappings |
+-------------------------
+
+		<ESC><ESC>	same as :q
+		<F2>		pastetoggle
+		<F3>		start shell in new tab
+		<F4>,<F5>	cycle through tabs
+	    <F7>		spell toggle
+
