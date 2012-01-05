@@ -188,4 +188,16 @@
 		@@			execute again
 		:reg <a-z>	show macro
 
+------------------
+| Spell checking |
+------------------
+
+		:set spell  activate
+		:set nospell
+		]s,[s		next,previous word
+		z=			suggestion
+		C-x s		suggestion popup (in iMode)
+		zg			add to personal word list
+		zG			add to session word list
+		zW			mark as misspelled
 
