@@ -56,6 +56,8 @@ set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(#c%b#0x%B%)#\ %-12.(%l,%c%V%)\ %P
 set mouse=a
 "set ttytype=xterm
 
+nnoremap <ESC><ESC> :q<CR>
+
 
 ":map <M-Esc>[62~ <ScrollWheelUp>
 ":map! <M-Esc>[62~ <ScrollWheelUp>
