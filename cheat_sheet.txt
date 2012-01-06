@@ -56,7 +56,7 @@
 		i			insert before cursor
 		I			insert at the start of the current line
 		a			insert after cursor
-		A			insert atthe end of the current line
+		A			insert at the end of the current line
 		o			new line below
 		O			new line above
 
@@ -163,7 +163,7 @@
 | Tabs & Split screen |
 -----------------------
 
-	* splitscreen
+	* split screen
 			
 		:split 		splits the screen
 		:vsplit
@@ -177,6 +177,16 @@
 		:tabnew		create new tab
 		<num>gt		goto tab <num>
 		gt,gT		next, previous tab
+
+----------
+| Macros |
+----------
+
+		q<a-z>		start record macro
+		q			stop recording
+		@<a-z>		execute macro
+		@@			execute again
+		:reg <a-z>	show macro
 
 ------------------
 | Spell checking |
@@ -197,4 +207,14 @@
 
 		xp			exchange two characters
 		ddp			swap lines
+
+-------------------------
+| my custom keymappings |
+-------------------------
+
+		<ESC><ESC>	same as :q
+		<F2>		pastetoggle
+		<F3>		start shell in new tab
+		<F4>,<F5>	cycle through tabs
+	    <F7>		spell toggle
 
