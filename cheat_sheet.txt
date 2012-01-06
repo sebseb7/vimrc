@@ -92,6 +92,7 @@
 		dd			delete current line
 		d<nav-cmd>	delete using navigation command
 		D			deletes rest of current line
+		<C-w>		deletes left to the beginning of the word (visual mode)
 
 	* shift/indent
 		
@@ -123,7 +124,8 @@
 
 	* search
 
-		/<pattern>	(n: next match, N: previous match)
+		/<pattern>/<argument>
+		/<pattern>				(n: next match, N: previous match)
 
 	* replace
 		
@@ -158,6 +160,8 @@
 		:.= 		show current line number
 		:=			count number of lines
 	    C-g			show file info
+		:%!xxd 		filter to hex
+		:%!xxd -r   filter back to normal 
 
 -----------------------
 | Tabs & Split screen |
@@ -208,13 +212,19 @@
 		xp			exchange two characters
 		ddp			swap lines
 
--------------------------
-| my custom keymappings |
--------------------------
+----------------------------------
+| my custom keymappings & plugins|
+----------------------------------
 
 		<ESC><ESC>	same as :q
 		<F2>		pastetoggle
 		<F3>		start shell in new tab
 		<F4>,<F5>	cycle through tabs
 	    <F7>		spell toggle
-
+		:<range>Narrow	Narrow (like emacs)
+		:Widen		Widen
+		:DiffSaved	shows diff to original buffer
+		:GitDiff
+		:GitCommit
+		:GitAdd		git stuff
+		
