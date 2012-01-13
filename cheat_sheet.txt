@@ -159,7 +159,7 @@
 
 		:.= 		show current line number
 		:=			count number of lines
-	    C-g			show file info
+		C-g			show file info
 		:%!xxd 		filter to hex
 		:%!xxd -r   filter back to normal 
 
@@ -222,7 +222,8 @@
 		<F2>		pastetoggle
 		<F3>		start shell in new tab
 		<F4>,<F5>	cycle through tabs
-	    <F7>		spell toggle
+		<F7>		spell toggle
+		<F8>		toggle between .c and .h
 		:<range>Narrow	Narrow (like emacs)
 		:Widen		Widen
 		:DiffSaved	shows diff to original buffer
