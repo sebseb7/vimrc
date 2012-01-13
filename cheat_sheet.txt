@@ -211,6 +211,8 @@
 
 		xp			exchange two characters
 		ddp			swap lines
+		:set virtualedit=all
+					allow to navigate in the void
 
 ----------------------------------
 | my custom keymappings & plugins|

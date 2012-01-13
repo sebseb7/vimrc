@@ -241,8 +241,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " }}}
 
     call <SID>X("Normal", "cccccc", "00005f", "")
-    call <SID>X("CursorLine", "", "000087", "none")
     call <SID>X("Pmenu", "", "0000af", "")
+    call <SID>X("ExtraWhitespace", "", "870000", "none")
+    call <SID>X("ExtraWhitespace2", "", "870000", "none")
+    call <SID>X("CursorLine", "", "000087", "none")
     call <SID>X("LineNr", "afff00", "0000af", "")
 
 " highlight groups
