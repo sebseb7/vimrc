@@ -15,6 +15,8 @@ set wrap!
 set hidden                                                              
 set ruler                                                               
 set showcmd
+set ignorecase
+set smartcase
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
