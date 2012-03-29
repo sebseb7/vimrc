@@ -17,6 +17,7 @@ set ruler
 set showcmd
 set ignorecase
 set smartcase
+set viminfo='200,s100,h
 
 "let g:loaded_matchparen=1 "disable highlighting matching brackets                      
                                                                                        
