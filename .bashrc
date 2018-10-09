@@ -8,7 +8,6 @@ case $- in
       *) return;;
 esac
 
-export TERM=xterm-256color
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -74,6 +73,7 @@ xterm*|rxvt*)
     ;;
 esac
 
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -119,6 +119,7 @@ alias mc='mc -x'
 cd ~
 
 if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then
+	export TERM=screen-256color
 	tmux -2 attach-session -t ssh || tmux -2 new-session -s ssh
 	exit
 fi

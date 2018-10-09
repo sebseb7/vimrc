@@ -292,3 +292,4 @@ set -g mouse on
 
 # move status line to top
 set -g status-position top
+set -g visual-bell on
