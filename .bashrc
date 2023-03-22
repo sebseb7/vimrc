@@ -118,10 +118,9 @@ alias mc='mc -x'
 
 cd ~
 
-if [ -z "$TMUX" ] && [[ $- =~ i ]]; then
-	export TERM=screen-256color
-	tmux -2 attach-session -t ssh || tmux -2 new-session -s ssh
-	exit
+if [[ $- =~ i ]] && [[ -z "$TMUX" ]] && [[ -n "$SSH_TTY" ]]; then
+  export TERM=screen-256color
+  tmux attach-session -t ssh_tmux || tmux new-session -s ssh_tmux
 fi
 
 
