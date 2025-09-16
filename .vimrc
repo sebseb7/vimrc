@@ -1,5 +1,6 @@
 syntax on
-colorscheme desert256
+colorscheme gruvbox
+set background=dark
 set cursorline                                                          
 set scrolloff=5
 set tabstop=4 shiftwidth=4
@@ -76,9 +77,6 @@ nnoremap <ESC><ESC> :q<CR>
 :au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 
-
-
-
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
 
@@ -123,8 +121,6 @@ endfunction
 set nocp
 filetype plugin on
 
-
-
 function! s:DiffWithSaved()
   let filetype=&ft
   diffthis
@@ -134,22 +130,10 @@ function! s:DiffWithSaved()
 endfunction
 com! DiffSaved call s:DiffWithSaved()
 
-
-
-
 command! -range=% -nargs=0 Space2Tab execute '<line1>,<line2>s#^\( \{'.&ts.'\}\)\+#\=repeat("\t", len(submatch(0))/' . &ts . ')'
-
 
 "cursor at the beginning of a tab in normal mode
 set list lcs=tab:\ \ 
 
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-highlight ExtraWhitespace2 ctermbg=red guibg=red
-
-match ExtraWhitespace2 /\s\+$\| \+\ze\t/
-
-
-match ExtraWhitespace /^\t*\zs \+/
 set viminfo='200,s100,h
 
